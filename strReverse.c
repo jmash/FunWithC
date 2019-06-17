@@ -17,8 +17,10 @@ int main() {
 
   printf("%s\n", revPtr);
   reverseString(revPtr, strPtr);
-
   printf("%s\n", revPtr);
+
+  free(strPtr);
+  free(revPtr);
 
   return 0;
 }
